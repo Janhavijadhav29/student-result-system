@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', Roboto, Arial, sans-serif; background: #f3f5f9; color: #1f2937; }
+.navbar { background: #1e3a8a; color: #fff; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.navbar h1 { margin: 0; font-size: 22px; }
+.tab { background: transparent; color: #c7d2fe; border: 1px solid #3b5bdb; padding: 8px 16px; margin-left: 8px; border-radius: 6px; cursor: pointer; }
+.tab.active, .tab:hover { background: #fff; color: #1e3a8a; }
+main { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+.page { display: grid; grid-template-columns: 340px 1fr; gap: 20px; align-items: start; }
+@media (max-width: 900px) { .page { grid-template-columns: 1fr; } }
+.card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.card h2 { margin-top: 0; font-size: 18px; }
+.form label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 10px; }
+.form input { display: block; width: 100%; margin-top: 4px; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px; }
+.actions { display: flex; gap: 8px; margin-top: 12px; }
+.btn { padding: 8px 14px; border: 1px solid #cbd5e1; background: #fff; border-radius: 6px; cursor: pointer; font-size: 14px; }
+.btn.primary { background: #1e3a8a; color: #fff; border-color: #1e3a8a; }
+.btn.danger { color: #b91c1c; border-color: #fca5a5; }
+.btn.small { padding: 4px 10px; font-size: 13px; }
+.list-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
+.search { display: flex; gap: 6px; }
+.search input { padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #e5e7eb; white-space: nowrap; }
+th { background: #f8fafc; }
+.row-actions { display: flex; gap: 6px; }
+.error { color: #b91c1c; font-size: 14px; }
+.muted { color: #6b7280; }
